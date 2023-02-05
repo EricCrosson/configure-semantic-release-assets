@@ -1,0 +1,36 @@
+[package]
+name = "configure-semantic-release-assets"
+version = "0.0.0-semantic-release-managed"
+edition = "2021"
+authors = ["Eric Crosson <eric.s.crosson@utexas.edu>"]
+license = "MIT OR Apache-2.0"
+description = "CLI to configure GitHub release assets in your semantic-release manifest"
+readme = "README.md"
+homepage = "https://github.com/EricCrosson/configure-semantic-release-assets"
+keywords = ["cli", "semantic-release", "configure"]
+categories = ["command-line-utilities"]
+exclude = [
+  "/.envrc",
+  "/.github",
+  "/.gitignore",
+  "/flake.{lock,nix}"
+]
+
+[lib]
+name = "configure_semantic_release_assets"
+
+[[bin]]
+name = "configure-semantic-release-assets"
+
+[dependencies]
+clap = { version = "=4.1.4", features = ["cargo", "derive", "wrap_help"] }
+env_logger = { version = "=0.10.0", default-features = false }
+log = "=0.4.17"
+serde = { version = "=1.0.152", features = ["derive"] }
+serde_json = { version = "=1.0.91", features = ["preserve_order"] }
+thiserror = "=1.0.38"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
