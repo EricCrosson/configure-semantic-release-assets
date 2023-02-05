@@ -1,3 +1,10 @@
+# [1.1.0-beta.2](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2023-02-05)
+
+
+### Reverts
+
+* Revert "ci: test semantic-release-action/rust's conditional compilation targets" ([2e05dd1](https://github.com/EricCrosson/configure-semantic-release-assets/commit/2e05dd134d893c9f054e99bd283cb0466480e198))
+
 # [1.1.0-beta.1](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.0.1...v1.1.0-beta.1) (2023-02-05)
 
 
