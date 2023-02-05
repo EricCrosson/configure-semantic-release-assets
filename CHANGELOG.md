@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.0.1...v1.1.0) (2023-02-05)
+
+
+### Features
+
+* accept multiple whitelist strings ([f7df712](https://github.com/EricCrosson/configure-semantic-release-assets/commit/f7df712eba22bf9c8a0d1679a27cb2555fb83673)), closes [#2](https://github.com/EricCrosson/configure-semantic-release-assets/issues/2)
+
 # [1.1.0-beta.2](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2023-02-05)
 
 
