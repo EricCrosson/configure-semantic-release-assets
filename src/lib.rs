@@ -55,7 +55,6 @@ impl SemanticReleasePluginConfiguration {
         }
     }
 
-    /// Assumes this will only be called on the @semantic-release/github plugin
     pub fn plugin_settings(&mut self) -> Option<&mut serde_json::Map<String, serde_json::Value>> {
         match self {
             SemanticReleasePluginConfiguration::WithoutConfiguration(_) => None,
@@ -73,7 +72,6 @@ impl SemanticReleaseManifest {
 
     pub fn apply_whitelist(&mut self, whitelist: HashSet<String>) -> ModifiedFlag {
         let mut dirty = ModifiedFlag::Unmodified;
-        // let plugins_to_remove: HashSet<String> = cli.remove.into_iter().collect();
 
         if let Some(plugins) = self.plugins.clone() {
             let filtered_plugins: Vec<_> = plugins
