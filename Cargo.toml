@@ -27,7 +27,7 @@ clap = { version = "=4.1.4", features = ["cargo", "derive", "wrap_help"] }
 env_logger = { version = "=0.10.0", default-features = false }
 log = "=0.4.17"
 serde = { version = "=1.0.152", features = ["derive"] }
-serde_json = { version = "=1.0.91", features = ["preserve_order"] }
+serde_json = { version = "=1.0.92", features = ["preserve_order"] }
 thiserror = "=1.0.38"
 
 [profile.release]
