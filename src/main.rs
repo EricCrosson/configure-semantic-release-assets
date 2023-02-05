@@ -12,7 +12,7 @@ enum Subcommand {
     Whitelist {
         /// Whitelist of release assets
         #[arg()]
-        whitelist: String,
+        whitelist: Vec<String>,
     },
 }
 
@@ -38,10 +38,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut configuration = SemanticReleaseConfiguration::read_from_file(&cli.config)?;
 
     match cli.subcommand {
-        Subcommand::Whitelist { whitelist } => {
-            configuration.apply_whitelist(HashSet::from_iter(
-                whitelist.split_whitespace().map(|s| s.to_owned()),
-            ));
+        Subcommand::Whitelist {
+            whitelist: raw_whitelist,
+        } => {
+            let whitelist: HashSet<String> = raw_whitelist
+                .into_iter()
+                .flat_map(|s| {
+                    s.split_whitespace()
+                        .map(|s| s.to_owned())
+                        .collect::<Vec<_>>()
+                })
+                .collect();
+
+            configuration.apply_whitelist(whitelist);
         }
     }
 
