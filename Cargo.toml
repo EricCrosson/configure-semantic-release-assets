@@ -23,7 +23,7 @@ name = "configure_semantic_release_assets"
 name = "configure-semantic-release-assets"
 
 [dependencies]
-clap = { version = "=4.1.4", features = ["cargo", "derive", "wrap_help"] }
+clap = { version = "=4.1.6", features = ["cargo", "derive", "wrap_help"] }
 env_logger = { version = "=0.10.0", default-features = false }
 log = "=0.4.17"
 serde = { version = "=1.0.152", features = ["derive"] }
