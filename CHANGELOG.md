@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.2...v1.1.3) (2023-02-26)
+
+
+### Bug Fixes
+
+* **deps:** pin rust crate indexmap to =1.9.2 ([6d1e142](https://github.com/EricCrosson/configure-semantic-release-assets/commit/6d1e142b3901fd5f2cd644b334b1cd2a716c119c))
+
 ## [1.1.2](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.1...v1.1.2) (2023-02-16)
 
 
