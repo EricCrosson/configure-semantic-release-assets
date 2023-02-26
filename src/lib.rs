@@ -66,8 +66,8 @@ impl SemanticReleasePluginConfiguration {
 }
 
 impl SemanticReleaseManifest {
-    pub fn parse_from_string(string: &str) -> Result<Self, Error> {
-        serde_json::from_str(&string).map_err(|err| Error::file_parse_error(err))
+    pub fn parse_from_string(string: &str) -> Result<Self, serde_json::Error> {
+        serde_json::from_str(&string)
     }
 
     pub fn apply_whitelist(&mut self, whitelist: HashSet<String>) -> ModifiedFlag {
@@ -145,7 +145,8 @@ impl SemanticReleaseConfiguration {
             .map_err(|err| Error::file_read_error(err, semantic_release_manifest_path))?;
 
         Ok(Self {
-            manifest: SemanticReleaseManifest::parse_from_string(&string)?,
+            manifest: SemanticReleaseManifest::parse_from_string(&string)
+                .map_err(|err| Error::file_parse_error(err, semantic_release_manifest_path))?,
             manifest_path: semantic_release_manifest_path.to_owned(),
             dirty: ModifiedFlag::Unmodified,
         })

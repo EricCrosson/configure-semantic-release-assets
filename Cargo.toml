@@ -28,7 +28,6 @@ env_logger = { version = "=0.10.0", default-features = false }
 log = "=0.4.17"
 serde = { version = "=1.0.152", features = ["derive"] }
 serde_json = { version = "=1.0.93", features = ["preserve_order"] }
-thiserror = "=1.0.38"
 
 [profile.release]
 lto = true
