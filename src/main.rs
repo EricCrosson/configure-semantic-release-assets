@@ -4,7 +4,7 @@ use clap::Parser;
 
 use configure_semantic_release_assets::{SemanticReleaseConfiguration, WriteTo};
 
-const SEMANTIC_RELEASE_MANIFEST_PATH: &'static str = ".releaserc.json";
+const SEMANTIC_RELEASE_MANIFEST_PATH: &str = ".releaserc.json";
 
 #[derive(Debug, Parser)]
 enum Subcommand {

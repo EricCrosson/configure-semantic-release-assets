@@ -52,7 +52,11 @@ impl std::fmt::Display for Error {
                 write!(f, "Unable to read file {:?}", path)
             }
             Error::FileParseError { source: _, path } => {
-                write!(f, "Unable to parse file {:?}", path)
+                write!(
+                    f,
+                    "Unable to parse semantic-release configuration from {:?}",
+                    path
+                )
             }
             Error::FileSerializeError { source: _ } => {
                 write!(f, "Unable to serialize semantic-release configuration")

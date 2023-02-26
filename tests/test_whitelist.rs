@@ -1,9 +1,10 @@
 use std::collections::HashSet;
 use std::iter::FromIterator;
+use std::str::FromStr;
 
 use configure_semantic_release_assets::SemanticReleaseManifest;
 
-const SEMANTIC_RELEASE_CONFIG: &'static str = r#"
+const SEMANTIC_RELEASE_CONFIG: &str = r#"
 {
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -77,7 +78,7 @@ const SEMANTIC_RELEASE_CONFIG: &'static str = r#"
 "#;
 
 fn check(initial: &str, whitelist: &str, expected: &str) {
-    let mut manifest = SemanticReleaseManifest::parse_from_string(initial).unwrap();
+    let mut manifest = SemanticReleaseManifest::from_str(initial).unwrap();
     manifest.apply_whitelist(HashSet::from_iter(
         whitelist.split_whitespace().map(|s| s.to_owned()),
     ));
