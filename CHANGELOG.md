@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.3...v1.1.4) (2023-02-26)
+
+
+### Bug Fixes
+
+* detect semantic-release config at runtime ([a63bbf1](https://github.com/EricCrosson/configure-semantic-release-assets/commit/a63bbf1e315c178b8fb3ff5408a2f2c852a75206))
+
 ## [1.1.3](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.2...v1.1.3) (2023-02-26)
 
 
