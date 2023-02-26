@@ -31,7 +31,7 @@ pub enum ModifiedFlag {
 #[serde(untagged)]
 pub enum SemanticReleasePluginConfiguration {
     WithoutConfiguration(String),
-    WithConfiguration(Vec<serde_json::Value>),
+    WithConfiguration(String, serde_json::Value),
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
@@ -49,8 +49,8 @@ impl SemanticReleasePluginConfiguration {
     pub fn plugin_name(&self) -> Option<&str> {
         match self {
             SemanticReleasePluginConfiguration::WithoutConfiguration(value) => Some(value),
-            SemanticReleasePluginConfiguration::WithConfiguration(array) => {
-                array.get(0).and_then(|value| value.as_str())
+            SemanticReleasePluginConfiguration::WithConfiguration(name, _configuration) => {
+                Some(name)
             }
         }
     }
@@ -58,8 +58,8 @@ impl SemanticReleasePluginConfiguration {
     pub fn plugin_settings(&mut self) -> Option<&mut serde_json::Map<String, serde_json::Value>> {
         match self {
             SemanticReleasePluginConfiguration::WithoutConfiguration(_) => None,
-            SemanticReleasePluginConfiguration::WithConfiguration(array) => {
-                array.get_mut(1).and_then(|value| value.as_object_mut())
+            SemanticReleasePluginConfiguration::WithConfiguration(_name, configuration) => {
+                configuration.as_object_mut()
             }
         }
     }
