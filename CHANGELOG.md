@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.4...v1.1.5) (2023-02-27)
+
+
+### Bug Fixes
+
+* **deps:** pin rust crate find-semantic-release-config to =1.0.5 ([c662b73](https://github.com/EricCrosson/configure-semantic-release-assets/commit/c662b73711b7f9e55f213d3a54ec3345cbd52af0))
+
 ## [1.1.4](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.3...v1.1.4) (2023-02-26)
 
 
