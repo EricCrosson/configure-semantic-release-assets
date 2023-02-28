@@ -66,7 +66,7 @@ dependencies = [
 
 [[package]]
 name = "configure-semantic-release-assets"
-version = "1.1.5"
+version = "1.1.6"
 dependencies = [
  "clap",
  "env_logger",
