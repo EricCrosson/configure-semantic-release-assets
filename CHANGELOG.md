@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.8...v1.1.9) (2023-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update rust crate clap to v4.1.9 ([5fdf4f0](https://github.com/EricCrosson/configure-semantic-release-assets/commit/5fdf4f0be3b0803590e9f2c497f52b52af7330f9))
+
 ## [1.1.8](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.7...v1.1.8) (2023-03-05)
 
 
