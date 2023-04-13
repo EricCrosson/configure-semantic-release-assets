@@ -28,7 +28,7 @@ env_logger = { version = "=0.10.0", default-features = false }
 find-semantic-release-config = "=1.0.5"
 indexmap = { version = "=1.9.3", features = ["serde"] }
 log = "=0.4.17"
-serde_json = { version = "=1.0.95", features = ["preserve_order"] }
+serde_json = { version = "=1.0.96", features = ["preserve_order"] }
 
 [profile.release]
 lto = true
