@@ -1,3 +1,10 @@
+## [1.1.24](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.23...v1.1.24) (2023-05-14)
+
+
+### Bug Fixes
+
+* improve readabiity of error messages ([ee1858d](https://github.com/EricCrosson/configure-semantic-release-assets/commit/ee1858dbc98de1153e241638b6989248a5d7ad0d))
+
 ## [1.1.23](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.22...v1.1.23) (2023-05-03)
 
 
