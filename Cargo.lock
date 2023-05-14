@@ -169,9 +169,9 @@ dependencies = [
 
 [[package]]
 name = "find-semantic-release-config"
-version = "1.0.5"
+version = "1.0.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e1c820054899e8c714f6064d3b0a3f0d20fe23491839a4499d65003ec056319a"
+checksum = "d43daafee5c92e39ee718f07ad98e349223b0ef5684268e47e2c5aa6b907518c"
 dependencies = [
  "log",
  "serde_json",
