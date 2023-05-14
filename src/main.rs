@@ -40,7 +40,7 @@ impl Display for Error {
                     "unsupported file extension {:?}",
                     extension.clone().unwrap_or_default()
                 )?;
-                write!(f, "Currently configure-semantic-release-manifest only supports the following extensions: {:?}", SUPPORTED_FILE_TYPES)
+                write!(f, "Currently configure-semantic-release-assets only supports the following extensions: {:?}", SUPPORTED_FILE_TYPES)
             }
         }
     }
