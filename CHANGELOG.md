@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.24...v1.1.25) (2023-05-14)
+
+
+### Bug Fixes
+
+* correct typo ([7edd40f](https://github.com/EricCrosson/configure-semantic-release-assets/commit/7edd40fce12b2dad4d696f62f31ac250676b8c8b))
+
 ## [1.1.24](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.23...v1.1.24) (2023-05-14)
 
 
