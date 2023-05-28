@@ -1,3 +1,10 @@
+## [1.1.27](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.26...v1.1.27) (2023-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update rust crate log to v0.4.18 ([165237b](https://github.com/EricCrosson/configure-semantic-release-assets/commit/165237bfdc5382e90e608c9203642c1d447cc515))
+
 ## [1.1.26](https://github.com/EricCrosson/configure-semantic-release-assets/compare/v1.1.25...v1.1.26) (2023-05-20)
 
 
